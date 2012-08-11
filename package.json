@@ -1,0 +1,42 @@
+{
+  "name": "passport-maelstrom",
+  "version": "0.0.1",
+  "description": "Maelstrom Network authentication strategy for Passport.",
+  "author": "Michael Pratt <urthen@gmail.com> (http://www.projectmaelstrom.com)",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Urthen/passport-maelstrom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Urthen/passport-maelstrom/issues"
+  },
+  "main": "./lib/passport-maelstrom",
+  "dependencies": {
+    "pkginfo": "0.2.x",
+    "passport-oauth": ">= 0.1.12"
+  },
+  "devDependencies": {
+    "vows": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js --spec"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "keywords": [
+    "passport",
+    "maelstrom",
+    "auth",
+    "oauth",
+    "authentication",
+    "identity"
+  ],
+  "optionalDependencies": {}
+}

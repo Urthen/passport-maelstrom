@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	if !user
+		h2 Welcome! Please log in.
+	else
+		if user.name
+			h2 Hello, #{user.name}!
+		else
+			h2 Hello, anonymous user!

@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	p ID: #{user.id}
+
+	if user.name
+		p Name: #{user.name}
+	else
+		p No name specified.
