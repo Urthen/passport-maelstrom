@@ -1,11 +1,11 @@
 var express = require("express"),
 	passport = require("passport"),
-	MaelstromStrategy = require("passport-maelstrom").Strategy,
+	MaelstromStrategy = require("../../lib/passport-maelstrom").Strategy,
 	port = process.env.PORT || 4000,
-	//APP_ID = "5025f326daa7aa0200000003",
-	//APP_SECRET = "09f12d94611a0ae0a933";
-	APP_ID = "50121884bee6cac105000028",
-	APP_SECRET = "cdc634594a7953a129d3";
+
+  // You'll need to change these values.
+	APP_ID = "503726a35662c4b539000004",
+	APP_SECRET = "2606a6bff676385b44da";
 
 
 // Passport session setup.

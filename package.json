@@ -1,6 +1,6 @@
 {
   "name": "passport-maelstrom",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Maelstrom Network authentication strategy for Passport.",
   "author": "Michael Pratt <urthen@gmail.com> (http://www.projectmaelstrom.com)",
   "repository": {
