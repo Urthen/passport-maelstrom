@@ -59,10 +59,7 @@ vows.describe('MaelstromStrategy').addBatch({
       },
       'should set raw property' : function(err, profile) {
         assert.isString(profile._raw);
-      },
-      'should set json property' : function(err, profile) {
-        assert.isObject(profile._json);
-      },
+      }
     },
   },
   
