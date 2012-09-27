@@ -18,6 +18,14 @@ vows.describe('MaelstromStrategy').addBatch({
     'should be named maelstrom': function (strategy) {
       assert.equal(strategy.name, 'maelstrom');
     },
+
+    'should have no scope with non-scope options': function(strategy) {      
+      assert.deepEqual(strategy.authorizationParams({'foo': 'bar'}), {});
+    },
+
+    'should have scope matching options': function(strategy) {
+      assert.deepEqual(strategy.authorizationParams({'scope': 'basicInfo.preferredName'}), {'scope': 'basicInfo.preferredName'})
+    }
   },
   
   'strategy when loading user profile': {

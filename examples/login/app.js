@@ -4,8 +4,8 @@ var express = require("express"),
 	port = process.env.PORT || 4000,
 
   // You'll need to change these values.
-	APP_ID = "503726a35662c4b539000004",
-	APP_SECRET = "2606a6bff676385b44da";
+	APP_ID = "5063bffa36d0a20200000004",
+	APP_SECRET = "d709fd6536499d1f8ad4";
 
 
 // Passport session setup.
@@ -31,7 +31,8 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new MaelstromStrategy({
     clientID: APP_ID,
     clientSecret: APP_SECRET,
-    callbackURL: "http://localhost:4000/auth/maelstrom/callback"
+    callbackURL: "http://localhost:4000/auth/maelstrom/callback",
+    scope: "basicInfo.preferredName"
   },
   function(accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
